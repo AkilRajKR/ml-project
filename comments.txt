@@ -1,0 +1,87 @@
+1. Create the environment
+python -m venv venv
+
+
+💡 This creates a folder called venv that contains an isolated Python environment.
+
+2. (Optional) Specify Python 3.8 explicitly
+
+If you have multiple Python versions installed, specify Python 3.8 directly:
+
+python3.8 -m venv venv
+
+
+(Make sure Python 3.8 is installed — you can check with python3.8 --version)
+
+3. Activate the environment
+
+Windows (PowerShell):
+
+venv\Scripts\Activate
+
+4. Install dependencies
+pip install -r requirements.txt
+
+>>
+(venv) PS E:\machine project> git init
+Initialized empty Git repository in E:/machine project/.git/
+(venv) PS E:\machine project> git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+
+Note
+
+before add readme create an empty reademe file.
+
+(venv) PS E:\machine project> git add README.md
+(venv) PS E:\machine project> git commit -m "first commit"
+[master (root-commit) f1c40d0] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+(venv) PS E:\machine project> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)   
+        comments.txt
+        venv/
+
+Note
+
+before push check the origin as main
+
+(venv) PS E:\machine project> git branch -M main
+(venv) PS E:\machine project> git remote add origin https://github.com/AkilRajKR/ml-project.git
+(venv) PS E:\machine project> git remote -v
+origin  https://github.com/AkilRajKR/ml-project.git (fetch)
+origin  https://github.com/AkilRajKR/ml-project.git (push)
+(venv) PS E:\machine project> 
+
+Note for the first time push
+
+for that we need to connect globally for the we use name and gmail in the git global
+
+
+1.after this then add .gitignore files
+2.in that add python require files alone
+
+3.after this then type git pull to update in the local disk
+
+4.create setup.py and requirements.txt file
+
+setup.py use
+
+1.it is responsible for the machine learning app into the package 
+2.from there anyone can install and use it
+3.from here use can deploy
+4.after that right the requirments in the setup file
+
+
+
+create the src(source file)
+1.to know that what packages are use and installed
+2.in this creat init file
+3.this file check when find packages()is called and used
+
+4.with this we can import anywhere using pipi
+5.entire project develope is inside the init file 
+6.this makes the entire project to be as a package
