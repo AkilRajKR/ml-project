@@ -85,3 +85,13 @@ create the src(source file)
 4.with this we can import anywhere using pipi
 5.entire project develope is inside the init file 
 6.this makes the entire project to be as a package
+
+
+after the all code part 
+ pip install -r requirements.txt  makes the data to be auto install of the libraries
+
+after need to push
+1.git add .
+2.git status
+3.git commit -m "Settup.py and requirement"
+4. git push -u origin main
